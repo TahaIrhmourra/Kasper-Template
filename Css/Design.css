@@ -289,6 +289,12 @@ header .search-bar i::after {
     max-width: 675px;
 }
 
+@media (max-width: 300px) {
+    .landing .text {
+        top: 18%;   
+    }
+}
+
 .landing .text .content h2 {
     font-weight: normal;
     line-height: 1.6;
@@ -926,6 +932,23 @@ header .search-bar i::after {
     font-style: italic;
 }
 
+@media (max-width: 300px) {
+    .skills_testimonials .testimonials .team-info .info1 #p1::after,
+    .skills_testimonials .testimonials .team-info .info2 #p1::after {
+        bottom:-20px;
+    }
+
+    .skills_testimonials .testimonials .team-info .info1, 
+    .skills_testimonials .testimonials .team-info .info2 {
+        gap: 10px !important;
+    }
+
+    .skills_testimonials .skills .paths div span:only-of-type::before {
+        width: 275px;
+    }
+
+}
+
 .skills_testimonials .skills .paths {
     display: flex;
     flex-direction: column;
@@ -1286,6 +1309,16 @@ header .search-bar i::after {
     left: 40px;
 }
 
+@media (max-width: 300px) {
+    .pricing .pricing-content .box .price p#dollar::before {
+        left: 10px;
+    }
+
+    .pricing .pricing-content .box .price p#dollar::after {
+        right: 0px !important;
+    }
+}
+
 .pricing .pricing-content .box .price p#dollar::after {
     content: "/MO";
     position: absolute;
@@ -1416,6 +1449,12 @@ header .search-bar i::after {
     caret-color: var(--main-color);
     border: 1px solid;
     border-right: none;
+}
+
+@media (max-width: 300px) {
+    .subscribe .inputs input[type=email] {
+        padding: 0px 75px;
+    }
 }
 
 .subscribe .inputs input::placeholder {
