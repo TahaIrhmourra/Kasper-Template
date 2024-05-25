@@ -1326,14 +1326,13 @@ header .search-bar i::after {
 }
 
 .subscribe .inputs input[type=email] {
-    padding: 0px 100px;
+    padding: 0px 45px;
     flex-grow: 1;
     background-color: transparent;
     color: white;
-    width: calc(100% - 130px);
+    width: calc(100% - 30px);
     height: 55px;
     position: relative;
-    border: none;
     caret-color: var(--main-color);
     border: 1px solid;
     border-right: none;
@@ -1344,7 +1343,8 @@ header .search-bar i::after {
         padding: 0px 70px !important;
     }
     .subscribe .inputs input[type=submit] {
-        width: 85px !important;
+        width: 120px !important;
+        font-size: 12px !important;
     }
 }
 
@@ -1372,7 +1372,7 @@ header .search-bar i::after {
 .subscribe .inputs input[type=submit] {
     background-color: var(--main-color);
     height: 55px;
-    width: 130px;
+    width: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
