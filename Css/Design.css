@@ -1326,11 +1326,11 @@ header .search-bar i::after {
 }
 
 .subscribe .inputs input[type=email] {
-    padding: 0px 45px;
+    padding: 0px 50px;
     flex-grow: 1;
     background-color: transparent;
     color: white;
-    width: calc(100% - 30px);
+    width: calc(100% + 100px);
     height: 55px;
     position: relative;
     caret-color: var(--main-color);
@@ -1338,13 +1338,13 @@ header .search-bar i::after {
     border-right: none;
 }
 
-@media (max-width: 340px) {
+@media (max-width: 370px) {
     .subscribe .inputs input[type=email] {
-        padding: 0px 70px !important;
+        padding: 0px 40px !important;
     }
     .subscribe .inputs input[type=submit] {
-        width: 120px !important;
-        font-size: 12px !important;
+        width: 135px !important;
+        font-size: 10px !important;
     }
 }
 
@@ -1372,7 +1372,7 @@ header .search-bar i::after {
 .subscribe .inputs input[type=submit] {
     background-color: var(--main-color);
     height: 55px;
-    width: 150px;
+    width: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
