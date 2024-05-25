@@ -272,6 +272,12 @@ header .search-bar i::after {
     margin-left: 130px;
 }
 
+@media (max-width: 300px) {
+    .landing .content {
+        padding: 30px;
+    }
+}
+
 .landing .overlay {
     position: absolute;
     left: 0;
@@ -866,14 +872,6 @@ header .search-bar i::after {
         width: 100%;
         margin-top: -105px;
     }
-
-    .skills_testimonials .skills .paths div span:only-of-type {
-        width: 100%;
-    }
-
-    .skills_testimonials .skills .paths div span:only-of-type::before {
-        width: 345px;
-    }
 }
 
 .skills_testimonials .testimonials .team-info {
@@ -942,11 +940,6 @@ header .search-bar i::after {
     .skills_testimonials .testimonials .team-info .info2 {
         gap: 10px !important;
     }
-
-    .skills_testimonials .skills .paths div span:only-of-type::before {
-        width: 275px;
-    }
-
 }
 
 .skills_testimonials .skills .paths {
@@ -954,113 +947,12 @@ header .search-bar i::after {
     flex-direction: column;
     gap: 32px;
     margin-top: 65px;
+    overflow: hidden;
 }
 
-.skills_testimonials .skills .paths .path1 span {
-    display: block;
-    width: 440px;
-    height: 25px;
-    background-color: var(--main-color);
-    margin-top: 10px;
-    position: relative;
-}
-
-.skills_testimonials .skills .paths .path1 span::before {
-    content: "";
-    width: 450px;
-    height: 25px;
-    background-color: var(--secondary-color);
-    position: absolute;
-    left: 0;
-    z-index: -1;
-}
-
-.skills_testimonials .skills .paths .path1 span::after {
-    content: attr(data-num);
-    width: 35px;
-    height: 22px;
-    background-color: black;
-    font-size: 10px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 60% 90%, 50% 100%, 40% 90%, 0% 90%, 0% 0%);
-    right: -18px;
-    top: -25px;
-}
-
-.skills_testimonials .skills .paths .path2 span {
-    display: block;
-    width: 440px;
-    height: 25px;
-    background-color: var(--main-color);
-    margin-top: 10px;
-    position: relative;
-}
-
-.skills_testimonials .skills .paths .path2 span::before {
-    content: "";
-    width: 450px;
-    height: 25px;
-    background-color: var(--secondary-color);
-    position: absolute;
-    left: 0;
-    z-index: -1;
-}
-
-.skills_testimonials .skills .paths .path2 span::after {
-    content: attr(data-num);
-    width: 35px;
-    height: 22px;
-    background-color: black;
-    font-size: 10px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 60% 90%, 50% 100%, 40% 90%, 0% 90%, 0% 0%);
-    right: -18px;
-    top: -25px;
-}
-
-.skills_testimonials .skills .paths .path3 span {
-    display: block;
-    width: 440px;
-    height: 25px;
-    background-color: var(--main-color);
-    margin-top: 10px;
-    position: relative;
-}
-
-.skills_testimonials .skills .paths .path3 span::before {
-    content: "";
-    width: 450px;
-    height: 25px;
-    background-color: var(--secondary-color);
-    position: absolute;
-    left: 0;
-    z-index: -1;
-}
-
-.skills_testimonials .skills .paths .path3 span::after {
-    content: attr(data-num);
-    width: 35px;
-    height: 22px;
-    background-color: black;
-    font-size: 10px;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 60% 90%, 50% 100%, 40% 90%, 0% 90%, 0% 0%);
-    right: -18px;
-    top: -25px;
-}
-
+.skills_testimonials .skills .paths .path1 span,
+.skills_testimonials .skills .paths .path2 span,
+.skills_testimonials .skills .paths .path3 span,
 .skills_testimonials .skills .paths .path4 span {
     display: block;
     width: 440px;
@@ -1070,9 +962,12 @@ header .search-bar i::after {
     position: relative;
 }
 
+.skills_testimonials .skills .paths .path1 span::before,
+.skills_testimonials .skills .paths .path2 span::before,
+.skills_testimonials .skills .paths .path3 span::before,
 .skills_testimonials .skills .paths .path4 span::before {
     content: "";
-    width: 450px;
+    width: 1000px;
     height: 25px;
     background-color: var(--secondary-color);
     position: absolute;
@@ -1080,19 +975,22 @@ header .search-bar i::after {
     z-index: -1;
 }
 
+.skills_testimonials .skills .paths .path1 span::after,
+.skills_testimonials .skills .paths .path2 span::after,
+.skills_testimonials .skills .paths .path3 span::after,
 .skills_testimonials .skills .paths .path4 span::after {
     content: attr(data-num);
-    width: 35px;
+    width: 30px;
     height: 22px;
     background-color: black;
-    font-size: 10px;
+    font-size: 12px;
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 60% 90%, 50% 100%, 40% 90%, 0% 90%, 0% 0%);
-    right: -18px;
+    right: -15px;
     top: -25px;
 }
 
@@ -1301,32 +1199,22 @@ header .search-bar i::after {
 
 .pricing .pricing-content .box .price p#dollar::before {
     content: "\0024";
-    position: absolute;
+    position: relative;
     color: black;
     font-size: 20px;
     font-weight: 700;
-    top: 0;
-    left: 40px;
-}
-
-@media (max-width: 300px) {
-    .pricing .pricing-content .box .price p#dollar::before {
-        left: 10px;
-    }
-
-    .pricing .pricing-content .box .price p#dollar::after {
-        right: 0px !important;
-    }
+    top: -30px;
+    left: -10px;
 }
 
 .pricing .pricing-content .box .price p#dollar::after {
     content: "/MO";
-    position: absolute;
+    position: relative;
     color: black;
     font-size: 13px;
     font-weight: 700;
     bottom: 0;
-    right: 30px;
+    right: -10px;
 }
 
 .pricing .pricing-content .box .price p#euro {
@@ -1338,22 +1226,22 @@ header .search-bar i::after {
 
 .pricing .pricing-content .box .price p#euro::before {
     content: "\20ac";
-    position: absolute;
+    position: relative;
     color: black;
     font-size: 20px;
     font-weight: 700;
-    top: 0;
-    left: 40px;
+    top: -30px;
+    left: -10px;
 }
 
 .pricing .pricing-content .box .price p#euro::after {
     content: "/MO";
-    position: absolute;
+    position: relative;
     color: black;
     font-size: 13px;
     font-weight: 700;
     bottom: 0;
-    right: 30px;
+    right: -10px;
 }
 
 .pricing .pricing-content .box .features p {
@@ -1451,9 +1339,12 @@ header .search-bar i::after {
     border-right: none;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 340px) {
     .subscribe .inputs input[type=email] {
-        padding: 0px 75px;
+        padding: 0px 70px !important;
+    }
+    .subscribe .inputs input[type=submit] {
+        width: 85px !important;
     }
 }
 
